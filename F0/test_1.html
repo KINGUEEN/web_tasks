@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <script type="text/javascript">
+        var show=true;
+        function change(){
+            var ps=document.getElementById("password");
+            if (show) {
+                ps.type="text";
+                show=false;
+            }else{
+                ps.type="password";
+                show=true;
+            }
+        };
+    </script>
+<style type="text/css" media="screen">
+input{
+	background-color: rgba(255,255,255,0.1);
+	width: 250px;
+	margin-top: 20px;
+    height: 42px;
+	text-align: center;
+	border: 0px;
+	font-size: 17px;
+}
+button{
+	background-color: rgba(255,255,255,0.1);
+	width: 70px;
+	margin-top: 20px;
+    height: 44px;
+	text-align: center;
+	border: none;
+	font-size: 17px;
+
+}
+	.acc{
+	background-image:url('m.png');
+	background-repeat:no-repeat;
+	padding-left:30px;
+}
+
+
+	.ps{
+	background-image:url('l.png');
+	background-repeat:no-repeat;
+	padding-left:30px;
+}
+
+	.log{
+	border: none;
+	margin-top: 20px;
+   	width: 278px;
+    height: 44px;
+}
+form{
+	display:inline;
+}
+body{
+	background-image: url('bbb.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-size: cover;
+		margin: 0 auto;
+}
+</style>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body><center>
+	<div style="margin-top: 150px">
+	<div>
+		<span><img src="" alt=""></span>
+	</div>
+	<h1 style="color:white;">登录</h1>
+	<div>
+		<div>
+		<table>
+		<form action="" method="get" accept-charset="utf-8">
+		<tr><td><div>
+		<i class="acc"></i>
+			<input type="text" id="account" value="用户" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}">
+		</div></td></tr>
+		<tr><td><div>
+		<i class="ps"></i>
+			<input  type="text" id="password" value="密码" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}" >
+			<button type="button" onclick="change()">隐藏</button>
+		</div></td></tr>
+		<tr><td><div>
+			<input class="log" type="submit" id="submit" value="Login" style="background-color: #ff3366">
+		</div></td></tr>
+		</form></table>
+	    </div>
+	</div>
+	</div></center>
+</body>
+</html>
