@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <script type="text/javascript">
+        var show=true;
+        function change(){
+            var ps=document.getElementById("password");
+            if (show) {
+                ps.type="text";
+                show=false;
+            }else{
+                ps.type="password";
+                show=true;
+            }
+        };
+    </script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login_style.css" />
+</head>
+<body>
+	<div>
+	<div>
+	<span >
+		<img src="image/group.png" alt="" width="50px" height="50px">
+	</span>
+	</div>
+	<h1 style="color:white;text-align: center;margin-left: -20px">登录</h1>
+	<div>
+		<div class="container">
+		<form action="" method="get" accept-charset="utf-8">
+		<div>
+		<i class="acc"></i>
+			<input type="text" id="account" value="User name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}">
+		</div>
+		<div>
+		<i class="ps"></i>
+			<input  type="text" id="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}" >
+			<button type="button" onclick="change()">隐藏</button>
+		</div>
+		<div>
+			<input class="log" type="submit" id="submit" value="Login" style="background-color: #ff3366">
+		</div>
+		</form>
+	    </div>
+	</div>
+</body>
+</html>
