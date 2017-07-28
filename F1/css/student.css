@@ -1,0 +1,6 @@
+body{
+	background-color: #F7FAFC;
+}
+.add,.search,.del,.change{
+	display: none;
+}

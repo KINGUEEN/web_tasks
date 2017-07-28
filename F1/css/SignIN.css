@@ -1,0 +1,41 @@
+.a{
+	color: #fff !important;
+	margin-bottom: 20px;
+}
+a:link {color: #666666;text-decoration:none !important;}
+a:visited {color: #FFFFFF; text-decoration:underline !important}
+a:hover {color: #FFFFFF; text-decoration:underline !important}
+a:active {color: #FFFFFF; text-decoration:underline !important}
+
+label{
+	color: #fff !important;
+}
+
+body{
+	background-image: url('../image/Login.jpg');
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+    -webkit-background-size: cover;
+}
+    .b{
+    	height: 50px !important;
+    	border:none !important;
+    	border-radius: 50px !important;
+    	background-color: rgba(255,255,255,0.3) !important;
+    }
+    .forget{
+    	 border-top: 1px solid #666666;
+    	 padding-top: 30px;
+    }
+    .forget_a{
+    	font-size: 15px;
+    	font-weight: bold;
+    }
+    .tit{
+    	margin-bottom: 20px;
+    	font-size: 15px;
+    	border-radius: 50px;
+    	height: 50px;
+    }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css" media="screen">
+	.a{
+		font:20px solid #FFFFFF;
+	}
+	.add.search.delete.change{
+		display: none;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>学生信息登录</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/student.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="text-center">学生信息管理系统</h1>
+    <div class="driver">
+    <ul class="nav nav-tabs">
+    	<li class="active"><a href="#">主页</a></li>
+		<li><a href="#" onclick="addShow()">增加</a></li>
+		<li><a href="#" onclick="searchShow()">查找</a></li>
+		<li><a href="#" onclick="delShow()">删除</a></li>
+		<li><a href="#" onclick="changeShow()">修改</a></li>
+	</ul>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3"></div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+    	<div class="add">
+    	<form>
+		<div class="form-group">
+			<span class="input-group-addon">姓名</span>
+			<input type="text" id="name" class="form-control" placeholder="请输入您的姓名">
+		</div>
+		<div class="radio">
+			<label class="radio-inline">
+				<input type="radio" id="sex" value="male" checked>男
+			</label>
+			<label class="control-label">
+				<input type="radio" id="sex" value="female">女
+			</label>
+		</div>
+		<div class="form-group">
+			<span class="input-group-addon">学号</span>
+			<input type="number" id="studentId" class="form-control" placeholder="请输入您的学号">
+		</div>
+		
+		<span class="input-group-addon">年级</span>
+		<select class="form-control" id="grade">
+			<option value="2015">大一</option>
+			<option vlaue="2016">大二</option>
+			<option value="2017">大三</option>
+			<option value="2018">大四</option>
+		</select>
+		<div class="form-group" style="margin-top: 15px">
+			<span class="input-group-addon">专业</span>
+			<input type="text" id="major" class="form-control" placeholder="请输入您的专业">
+		</div>
+		<button type="submit" class="btn btn-info btn-block" onclick="addStu()">提交</button>
+	</form>
+    </div>
+    <div class="search">
+    <form>
+		<div class="form-group">
+			<span class="input-group-addon">学号</span>
+			<input type="text" id="tid" class="form-control" placeholder="请输入您的学号">
+			<button type="submit" class="btn btn-info btn-block" onclick="searchStu()">提交</button>
+		</div>
+    </form>
+    <table class="table">
+    	<caption>查询结果显示</caption>
+    	<thead>
+    		<tr>
+    			<th>姓名</th>
+    			<th>性别</th>
+    			<th>学号</th>
+    			<th>年级</th>
+    			<th>专业</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td id="sName"></td>
+    			<td id="sSex"></td>
+    			<td id="sId"></td>
+    			<td id="sGrade"></td>
+    			<td id="sMajor"></td>
+    		</tr>
+    	</tbody>
+    </table>
+    </div>
+    <div class="del">
+    <form>
+    	<div class="form-group">
+			<span class="input-group-addon">学号</span>
+			<input type="text" id="did" class="form-control" placeholder="请输入您的学号">
+			<button type="submit" class="btn btn-info btn-block" onclick="delStu()">删除</button>
+		</div>
+	</form>
+    </div>
+
+    <div class="change">
+    	<form>
+    	<div class="form-group">
+			<span class="input-group-addon">学号</span>
+			<input type="text" id="tid" class="form-control" placeholder="请输入您的学号">
+			<button type="submit" class="btn btn-info btn-block" onclick="FormShow()">提交</button>
+		</div>
+		</form>
+		<div  class="Form" style="display: none;">
+    	<form>
+		<div class="form-group">
+			<span class="input-group-addon">姓名</span>
+			<input type="text" id="cName" class="form-control" placeholder="请输入您的姓名">
+		</div>
+		<div class="radio">
+			<label class="radio-inline">
+				<input type="radio"  id="cSex" value="male" checked>男
+			</label>
+			<label class="control-label">
+				<input type="radio"  id="cSex" value="female">女
+			</label>
+		</div>
+		<div class="form-group">
+			<span class="input-group-addon">学号</span>
+			<input type="number" id="cId" class="form-control" placeholder="请输入您的学号">
+		</div>
+		
+		<span class="input-group-addon">年级</span>
+		<select class="form-control" id="cGrade">
+			<option value="2015">大一</option>
+			<option vlaue="2016">大二</option>
+			<option value="2017">大三</option>
+			<option value="2018">大四</option>
+		</select>
+		<div class="form-group" style="margin-top: 15px">
+			<span class="input-group-addon">专业</span>
+			<input type="text" id="cMajor" class="form-control" placeholder="请输入您的专业">
+		</div>
+		<button type="submit" class="btn btn-info btn-block" onclick="change()">提交</button>
+	</form>
+	</div>
+    </div>
+    </div>
+    </div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/student.js"></script>
+</body>
+</html>
