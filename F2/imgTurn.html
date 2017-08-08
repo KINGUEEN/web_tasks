@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>轮播图</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"  href="css/imgstyle.css">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+</head>
+<body>
+
+    <div data-role="page" data-position="fixed" data-fullscreen="true" id="mypage">
+        <div data-role="header" data-theme="b" data-tap-toggle = "false">
+            <h1>轮播图</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" target="ui-btn-active ui-state-persist" data-icon="info"></a></li>
+                <li><a href="#" target="_self" data-icon="grid"></a></li>
+                <li><a href="#" target="_self" data-icon="star"></a></li>
+            </ul>
+        </div>
+        <div data-role="content">
+                <div class="row">
+        <div class="slider">
+            <ul class="img-ul">
+                <li class="img-photo">
+                    <img class="img" src="images/1.jpg">
+                </li>
+                <li class="img-photo">
+                    <img class="img" src="images/2.jpg">
+                </li>
+                <li class="img-photo">
+                    <img class="img" src="images/3.jpg">
+                </li>
+                <li class="img-photo">
+                    <img class="img" src="images/4.jpg">
+                </li>
+            </ul>
+            <div class="img-change">
+                <ul class="img-page">
+                    <li class="imgPage">1</li>
+                    <li class="imgPage">2</li>
+                    <li class="imgPage">3</li>
+                    <li class="imgPage">4</li>
+                </ul>
+                <div class="img-turn">
+                    <a class="img-pre" href="javascript:;;"><</a>
+                    <a class="img-next" href="javascript:;;">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true"  data-theme="b" data-tap-toggle = "false">
+            <h1>———————————</h1>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imgjs.js"></script>
+</body>
+</html>

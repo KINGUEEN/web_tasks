@@ -1,0 +1,79 @@
+$color:#fff;
+$position:absolute;
+$text-align:center;
+$background:rgba(0, 0, 0, 0.2);
+* {
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style: outside none none;
+}
+.slider, .img-photo img, .img-change {
+    width: 622px;
+    height: 413px;
+}
+.slider {
+    text-align: center;
+    margin: 30px auto;
+    position: relative;
+}
+.img-photo, .img-page, .img-pre, .img-next {
+    position: $position;
+    z-index: 1;
+}
+.img-photo {
+    position: $position;
+}
+.img-photo img {
+    border: none;
+}
+.img-change {
+    position: relative;
+}
+.img-page {
+    margin-left: -51px;
+    position: $position;
+    left: 50%;
+    bottom: 4px;
+}
+.img-page {
+	li {
+    background: #3e3e3e;
+    border-radius: 50%;
+    color: $color;
+    cursor: pointer;
+    margin: 0 2px;
+    overflow: hidden;
+    text-align: $text-align;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+}
+}
+.img-page {
+	.on {
+    background: blue;
+}
+}
+.img-turn a{
+    background: $background;
+    color: $color;
+    text-align: $text-align;
+    display: block;
+    font-size: 35px;
+    width: 40px;
+    height: 80px;
+    line-height: 62px;
+    margin-top: -31px;
+    position: $position;
+    top: 50%;
+    &:HOVER{
+    	 background: $background;
+    }
+}
+.img-next {
+    left: 100%;
+    margin-left: -40px;
+}
