@@ -26,6 +26,7 @@
 		<li><a href="#" onclick="searchShow()">查找</a></li>
 		<li><a href="#" onclick="delShow()">删除</a></li>
 		<li><a href="#" onclick="changeShow()">修改</a></li>
+		<li><a href="#" onclick="allShow()">展示</a></li>
 	</ul>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-3"></div>
@@ -82,14 +83,8 @@
     			<th>专业</th>
     		</tr>
     	</thead>
-    	<tbody>
-    		<tr>
-    			<td id="sName"></td>
-    			<td id="sSex"></td>
-    			<td id="sId"></td>
-    			<td id="sGrade"></td>
-    			<td id="sMajor"></td>
-    		</tr>
+    	<tbody id="searchPut">
+    	    
     	</tbody>
     </table>
     </div>
@@ -129,7 +124,6 @@
 			<span class="input-group-addon">学号</span>
 			<input type="number" id="cId" class="form-control" placeholder="请输入您的学号">
 		</div>
-		
 		<span class="input-group-addon">年级</span>
 		<select class="form-control" id="cGrade">
 			<option value="2015">大一</option>
@@ -144,6 +138,26 @@
 		<button type="submit" class="btn btn-info btn-block" onclick="change()">提交</button>
 	</form>
 	</div>
+    </div>
+    <div class="all">
+    	<table class="table">
+    		<caption>学生信息</caption>
+    		<thead>
+    			<tr>
+    			    <th>姓名</th>
+    				<th>性别</th>
+    				<th>学号</th>
+    				<th>年级</th>
+    				<th>专业</th>
+    			</tr>
+    		</thead>
+    		<tbody id="showAll">
+    		
+    		</tbody>
+    	</table>
+    	<form role="form">
+    		<button type="submit" class="btn btn-info btn-block" onclick="showAllinof()">显示</button>
+    	</form>
     </div>
     </div>
     </div>

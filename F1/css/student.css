@@ -1,6 +1,6 @@
 body{
 	background-color: #F7FAFC;
 }
-.add,.search,.del,.change{
+.add,.search,.del,.change,.all{
 	display: none;
 }
