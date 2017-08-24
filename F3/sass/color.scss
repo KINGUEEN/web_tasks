@@ -1,0 +1,54 @@
+$width:300px;
+$margin-left: auto;
+$margin-right: auto;
+$text-align: center;
+$border-width: 1px;
+$border-radius: 5px;
+$border-style: solid;
+h1{
+	text-align: $text-align;
+}
+body{
+    background: #CCFFCC;
+}
+.container {
+    margin: 30px auto;
+
+}
+
+.mapContainer {
+  width: 300px;
+  height: 300px;
+}
+.mapContainer #colorPoint {
+    text-align: $text-align;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+.mapContainer #mapPoint {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 10px;
+    height: 10px;
+    border-style: $border-style;
+    border-width: $border-width;
+    border-radius: $border-radius;
+}
+
+.ribbonContainer {
+    margin: auto;
+    width: 25px;
+    height: 300px;
+}
+.ribbonContainer #ribbonPoint {
+    position: absolute;
+    display: block;
+    top: 0;
+    margin-right: $margin-right;
+    margin-left: $margin-left;
+    width: 25px;
+    height: 10px;
+    border-style: $border-style;
+    border-width: $border-width;
+}
